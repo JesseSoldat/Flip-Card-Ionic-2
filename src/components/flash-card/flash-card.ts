@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 export class FlashCardComponent {
 
   flipped: boolean = false;
+ 
 
   constructor() {
     
