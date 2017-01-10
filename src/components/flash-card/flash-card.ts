@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-/*
+/* 
   Generated class for the FlashCard component.
 
   See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
@@ -12,11 +12,15 @@ import { Component } from '@angular/core';
 })
 export class FlashCardComponent {
 
-  text: string;
+  flipped: boolean = false;
 
   constructor() {
-    console.log('Hello FlashCard Component');
-    this.text = 'Hello World';
+    
+  }
+
+  flip(){
+    this.flipped = !this.flipped;
+    console.log(this.flipped);
   }
 
 }
